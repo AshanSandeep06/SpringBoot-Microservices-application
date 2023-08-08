@@ -2,10 +2,7 @@ package lk.epic.fraud_service.entity;
 
 import lombok.*;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Data
@@ -13,6 +10,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Entity
 public class FraudCheckHistory {
     @Id
     @SequenceGenerator(name = "fraud_id_sequence", sequenceName = "fraud_id_sequence")
