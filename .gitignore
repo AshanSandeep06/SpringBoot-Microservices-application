@@ -1,3 +1,5 @@
 .idea/
 **/pom.xml
 **/*.iml
+**/*.yml
+**/*.properties
