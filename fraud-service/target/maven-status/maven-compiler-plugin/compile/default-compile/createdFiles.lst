@@ -1,0 +1,8 @@
+lk\epic\fraud_service\repo\FraudRepo.class
+lk\epic\fraud_service\service\FraudService.class
+lk\epic\fraud_service\CustomerServiceInitializer.class
+lk\epic\fraud_service\controller\FraudController.class
+lk\epic\fraud_service\dto\CustomerRegistrationRequestDTO.class
+lk\epic\fraud_service\entity\Customer$CustomerBuilder.class
+lk\epic\fraud_service\service\impl\FraudServiceImpl.class
+lk\epic\fraud_service\entity\Customer.class
