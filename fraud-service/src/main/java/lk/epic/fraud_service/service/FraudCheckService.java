@@ -1,5 +1,7 @@
 package lk.epic.fraud_service.service;
 
+import lk.epic.fraud_service.dto.FraudCheckResponse;
+
 public interface FraudCheckService {
-    boolean isFraudulentCustomer(Integer customerId);
+    FraudCheckResponse isFraudulentCustomer(String customerId);
 }
