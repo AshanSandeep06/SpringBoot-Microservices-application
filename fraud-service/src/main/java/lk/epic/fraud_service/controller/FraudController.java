@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 public record FraudController(FraudCheckService fraudCheckService) {
     @GetMapping(path = "/{customerId}")
     public ResponseEntity<ResponseUtil<FraudCheckResponse>> isFraudster(@PathVariable String customerId) {
+        log.info("FraudController GetMapping Invoked..!");
         return ResponseEntity.status(HttpStatus.OK).body(
                 new ResponseUtil<>("00",
                         "Check whether the Customer is Fraudulent or not",
