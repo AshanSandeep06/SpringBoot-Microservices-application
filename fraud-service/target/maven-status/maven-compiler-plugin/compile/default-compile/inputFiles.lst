@@ -1,0 +1,9 @@
+F:\Epic Lanka Projects\SpringBoot-Microservices-Application\fraud-service\src\main\java\lk\epic\fraud_service\dto\FraudCheckResponse.java
+F:\Epic Lanka Projects\SpringBoot-Microservices-Application\fraud-service\src\main\java\lk\epic\fraud_service\service\impl\FraudCheckServiceImpl.java
+F:\Epic Lanka Projects\SpringBoot-Microservices-Application\fraud-service\src\main\java\lk\epic\fraud_service\controller\FraudController.java
+F:\Epic Lanka Projects\SpringBoot-Microservices-Application\fraud-service\src\main\java\lk\epic\fraud_service\util\ResponseUtil.java
+F:\Epic Lanka Projects\SpringBoot-Microservices-Application\fraud-service\src\main\java\lk\epic\fraud_service\service\FraudCheckService.java
+F:\Epic Lanka Projects\SpringBoot-Microservices-Application\fraud-service\src\main\java\lk\epic\fraud_service\entity\FraudCheckHistory.java
+F:\Epic Lanka Projects\SpringBoot-Microservices-Application\fraud-service\src\main\java\lk\epic\fraud_service\repo\FraudRepo.java
+F:\Epic Lanka Projects\SpringBoot-Microservices-Application\fraud-service\src\main\java\lk\epic\fraud_service\advisor\AppWideExceptionHandler.java
+F:\Epic Lanka Projects\SpringBoot-Microservices-Application\fraud-service\src\main\java\lk\epic\fraud_service\FraudServiceInitializer.java

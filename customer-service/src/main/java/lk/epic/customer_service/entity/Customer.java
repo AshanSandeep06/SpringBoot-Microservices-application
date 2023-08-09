@@ -2,7 +2,8 @@ package lk.epic.customer_service.entity;
 
 import lombok.*;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Data
 @Builder
