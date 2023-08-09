@@ -36,7 +36,7 @@ public record CustomerServiceImpl(CustomerRepo customerRepo, RestTemplate restTe
         if (!customerRepo.existsById(customer.getCustomerId())) {
             if (customerRepo.save(customer) != null) {
                 ResponseEntity<ResponseUtil<FraudCheckResponse>> responseEntity = restTemplate.exchange(
-                        "http://localhost:8081/fraud-service/api/v1/fraud-check/{customerId}",
+                        "http://FRAUD-SERVICE/api/v1/fraud-check/{customerId}",
                         HttpMethod.GET,
                         null,
                         new ParameterizedTypeReference<ResponseUtil<FraudCheckResponse>>() {
