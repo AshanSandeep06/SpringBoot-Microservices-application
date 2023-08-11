@@ -6,6 +6,8 @@ import lk.epic.product_service.repo.ProductRepo;
 import lk.epic.product_service.service.ProductService;
 import lk.epic.product_service.util.ResponseUtil;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,8 +18,20 @@ import java.util.List;
 @RequestMapping("/api/v1/product")
 @CrossOrigin
 @RequiredArgsConstructor
+@RefreshScope // To Refresh the Configuration properties in our services
+// Whenever you call this controller which is annotated with this annotation
+// it will basically refresh that particular bean and coming back to our endpoint
 public class ProductController {
     private final ProductService productService;
+
+    @Value("${test.name}")
+    private String name;
+
+    @GetMapping(path = "/test")
+    public String test() {
+        return name;
+    }
+
     @GetMapping
     public ResponseEntity<ResponseUtil<List<Product>>> getAllProducts() {
         return ResponseEntity.status(HttpStatus.OK)
