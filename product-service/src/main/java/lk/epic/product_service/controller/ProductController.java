@@ -34,6 +34,7 @@ public class ProductController {
 
     @GetMapping
     public ResponseEntity<ResponseUtil<List<Product>>> getAllProducts() {
+        System.out.println("Hiiiiiiiiiiiiiiiiii...!");
         return ResponseEntity.status(HttpStatus.OK)
                 .body(productService.getAllProducts());
     }
