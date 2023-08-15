@@ -20,8 +20,8 @@ import java.util.Objects;
 // We can inject CustomerRepo interface's bean just like this
 // We don't need @Autowired annotation for that
 // Because we're using a record
-public record CustomerServiceImpl(CustomerRepo customerRepo, RestTemplate restTemplate) implements CustomerService {
-    @Override
+public record CustomerServiceImpl(CustomerRepo customerRepo) implements CustomerService {
+    /*@Override
     public void registerCustomer(CustomerRegistrationRequestDTO registrationRequest) {
         Customer customer = Customer.builder()
                 .customerId(registrationRequest.customerId())
@@ -57,5 +57,5 @@ public record CustomerServiceImpl(CustomerRepo customerRepo, RestTemplate restTe
         } else {
             throw new RuntimeException("This Customer is already exists..!");
         }
-    }
+    }*/
 }
