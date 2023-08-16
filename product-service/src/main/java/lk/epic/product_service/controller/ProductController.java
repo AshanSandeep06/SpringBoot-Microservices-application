@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.function.Supplier;
 
 @RestController
-@RequestMapping("/api/product")
+@RequestMapping("/api/v1/product")
 @CrossOrigin
 @RequiredArgsConstructor
 // We are going to inject resillence 4j circuit breaker factory class into our Controller class

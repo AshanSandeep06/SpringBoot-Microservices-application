@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
-//@FeignClient(name = "product-service")
+@FeignClient(name = "product-service")
 @Service
 // Using this annotation spring will inject this product-service bean into our controller class
 public interface ProductServiceClient {
     // create a http call
     // In Feign Client, spring will automatically generate the rqeuired
     // code for us(spring will automatically do it with help of annotations we are added)
-    /*@GetMapping("/api/product")
-    ResponseEntity<ResponseUtil<List<ProductDTO>>> getAllProducts();*/
+    @GetMapping("/api/v1/product")
+    ResponseEntity<ResponseUtil<List<ProductDTO>>> getAllProducts();
 }
